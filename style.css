@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: var(--primary);
+    padding: 1rem 1rem;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #ff6a35;
+    --secondary: #444EC7;
+}
+
+.prime-container h3 {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+.prime-container .search-container {
+    width: 100%;
+    height: 4rem;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    background: white;
+    margin-bottom: 1rem;
+}
+.prime-container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 13px;
+    font-size: 1rem;
+    padding-inline: 1rem;
+
+}
+.prime-container button {
+    height: 100%;
+    width: 5rem;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border: none;
+    outline: none;
+    background: var(--secondary);
+    color: white;
+    font-size: 1.1rem;
+}
+
+.lang-settings {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lang-settings h3 {
+    font-size: 1rem;
+}
+
+select {
+    background: var(--secondary);
+    color: white;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    padding: .4rem;
+    max-width: 100px;
+}
+option {
+    font-size: .8rem;
+}
+
+.words-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px,1fr));
+}
+
+.word {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 8px;
+    background: var(--secondary);
+    color: white;   
+    padding-block: 2px;
+    font-size: .9rem;
+    font-weight: 100;
+}
+.word .ud {
+    border-left: 1px solid gray;
+    text-align: right;
+}
+.word div {
+    padding-inline: .7rem;
+}
+.words-container {
+    display: grid;
+    gap: 5px;
+}
+.clear {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.clear button {
+    background: var(--secondary);
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+}
+
+
+@media (min-width: 764px) {
+    body {
+        padding-inline: 5rem;
+    }
+    .word {
+        font-size: 1.2rem;
+    }
+    
+}
+@media (min-width: 1024) {
+    body {
+        padding-inline: 10rem;
+    }
+}
